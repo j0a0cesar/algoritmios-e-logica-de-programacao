@@ -1,0 +1,21 @@
+INICIO votos
+VAR
+   REAL: votV, votB, votN, totalV , pctV, pctB, pctN;
+ ESCREVA("Qual a quantidade de votos validos: ");
+ LEIA(votV);
+ ESCREVA("Qual a quantidade de votos em branco: ");
+ LEIA(votB);
+ ESCREVA("Qual a quantidade de votos nulos: ");
+ LEIA(votN);
+   totalV= votV + votB + votN ;
+   pctV= (votV/totalV);
+   pctB= (votB/totalV);
+   pctN= (votN/totalV);
+ ESCREVA("A quantidade de votos validos foi de: e sua porcetagem é: ", votV, 
+pctV);
+ ESCREVA(“A quantidade de votos em branco foi de: e sua porcetagem é: ", votB, 
+pctB);
+ ESCREVA("A quantidade de votos nulos foi de: e a sua porcetagem é: ", votN, 
+pctN);
+ ESCREVA("O total de votos foi de: ", totalV);
+FIM_ALGORITMO
