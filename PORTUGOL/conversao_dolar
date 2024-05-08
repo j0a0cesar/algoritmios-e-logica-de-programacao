@@ -1,0 +1,11 @@
+ALGORITMO conversao_dolar
+VAR
+  REAL: real, taxa, dolar;
+INICIO
+  ESCREVA("Digite o valor em reais a ser convertido ");
+  LEIA (real); 
+  ESCREVA("Digite a taxa de câmbio: "); 
+  LEIA (taxa);
+    dolar ← real / taxa;
+  ESCREVA("O valor convertido em dólar é: $", dolar);
+FIMALGORITMO
