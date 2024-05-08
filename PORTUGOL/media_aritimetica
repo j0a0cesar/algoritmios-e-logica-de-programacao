@@ -1,0 +1,12 @@
+ALGORITMO media_aritimetica
+VAR
+REAL: nota1, nota2, nota3,media;
+  ESCREVA (“ Qual o valor da sua primeira nota: ”);
+  LEIA (nota1);
+  ESCREVA (“ Qual o valor da sua segunda nota: ”);
+  LEIA (nota2);
+  ESCREVA (“Qual o valor da sua terceira nota: ”);
+  LEIA (nota3);
+    media = (nota1+nota2+nota3)/3;
+  ESCREVA (“A sua média foi de: ”, media);
+FIMALGORITMO
