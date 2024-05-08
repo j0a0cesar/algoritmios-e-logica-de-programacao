@@ -1,0 +1,13 @@
+ALGORITMO tudo_p_segundos
+VAR
+  INTEIRO: horas, min, seg1, tseg;
+INICIO
+  ESCREVA(“Insira a quantidade de horas que deseja transforma: ”);
+  LEIA(horas);
+  ESCREVA (“Insira a quantidade de minutos que deseja transforma: ”);
+  LEIA(min);
+  ESCREVA(“Insira a quantidade de sergundos que deseja transforma”);
+  LEIA(seg)
+    tseg <- (horas * 3600) + min * 60 + seg;
+  ESCREVA(“O total de segundos é: ”, tseg);
+FIMALGORITMO
