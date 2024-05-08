@@ -1,0 +1,11 @@
+ALGORITMO area_triangulo
+VAR
+  REAL: altura, area, base;
+INICIO
+  ESCREVA ("Informe a altura do triângulo: ");
+  LEIA (altura);
+  ESCREVA ("Informe a base do triângulo");
+  LEIA (base);
+    area = (base * altura) / 2
+  ESCREVA ("A área do triângulo é: ", area);
+FIMALGORITMO
