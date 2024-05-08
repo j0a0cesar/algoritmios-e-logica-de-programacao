@@ -1,0 +1,13 @@
+
+ALGORITMO antecessor_sucessor 
+VAR
+INTEIRO: number, antecessor, sucessor;
+INICIO
+  ESCREVA ( " Por favor, informe um número : ");
+  LEIA (number);
+    antecessor ← number-1 ;
+    sucessor ← number + 1 ;
+  ESCREVA (" Número informado: " , number); 
+  ESCREVA (" Antecessor: " , antecessor);
+  ESCREVA (" Sucessor: " , sucessor) ;
+FIMALGORITMO
