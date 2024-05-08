@@ -1,0 +1,10 @@
+
+INICIO gorjeta
+VAR
+ REAL : gorjeta, valT;
+ ESCREVA("Insira o valor gasto no restaurante: ");
+ LEIA(valT);
+   gorjeta = valT * 0.1;
+ ESCREVA("Com o valor gasto de: a gorjeta foi de: ", valT, gorjeta);
+ 
+FIMALGORITMO
