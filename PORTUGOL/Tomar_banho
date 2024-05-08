@@ -1,0 +1,24 @@
+Escreva o algoritmo de tomar banho usando Portugol
+
+ALGORITMO Tomar_banho
+VAR
+  LOGICO: portaFechada;
+INICIO
+  ESCREVA ("Ir ao banheiro");
+  portaFechada <- verdadeiro;
+SE portaFechada então;
+  Escreva ("Abrir a porta do banheiro");
+portaFechada <- falso;
+FIMSE
+
+  ESCREVA ("Entrar no banheiro e fechar a porta");
+    ESCREVA ("Tirar a roupa");
+      ESCREVA ("Se posicionar em baixo do chuveiro");
+        ESCREVA ("Ligar o chuveiro");
+           ESCREVA ("Se ensaboar e se enxaguar");
+         ESCREVA ("Desligar o chuveiro");
+      ESCREVA ("Se secar ");
+    ESCREVA ("Pendurar a toalha");
+  ESCREVA ("Colocar a roupa")Escreva ("Sair do banheiro ");
+
+FIMALGORITMO
