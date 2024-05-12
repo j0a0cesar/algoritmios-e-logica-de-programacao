@@ -1,0 +1,31 @@
+ALGORITMO_idade
+VAR
+ INTEIRO: idade, maior, menor, soma, cont;
+ REAL: media;
+INICIO
+ cont <- 0;
+ soma <- 0;
+ idade <- 1;
+EQUANTO(idade > 0) FACA
+ 
+ ESCREVA("informe a idade do seu grupo, e digite 0 para encerrar");
+ LEIA(idade);
+ 
+ SE(idade > 0) ENTAO 
+ cont <- cont + 1;
+ soma <- soma + idade;
+ SE (maior < idade ) ENTAO
+ maior <- idade; 
+ FIM_SE
+ SE (menor > idade) ENTAO
+ menor <- idade;
+ FIM_SE 
+ 
+FIM_ENQUANTO 
+ media <- soma / cont;
+ ESCREVA("Numero de pessoas: ", cont);
+ ESCREVA("Idade media: ", media);
+ ECREVA("Menor idade: ", menor);
+ ECREVA("Maior idade: ", maior);
+ 
+FIM_ALGORITMO
