@@ -1,0 +1,13 @@
+#include <stdio.h> 
+int main(){
+ int num=1,soma = 0;
+ 
+ 
+ while (soma < 100)
+ {
+ printf("\n O subtotal da soma é : %d", soma);
+ printf("\n A quantidade de números a serem somados é: %d", num);
+ soma = soma + num;
+ num = num + 1;
+ }
+return 0;
