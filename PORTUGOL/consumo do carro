@@ -1,0 +1,18 @@
+
+ALGORITMO km_l
+VAR
+INICIO
+ REAL:dkm, qldg, con;
+  ESCREVA(“Qual a quantidade de quilômetros que você percorreu: ”);
+  LEIA(“dkm”);
+  ESCREVA(“Qual a quantidade de gasolina consumida: ”);
+  LEIA(“qldg”);
+  con ← dkm/qldg;
+SE (con < 8.0) ENTAO
+  ESCREVA(“VENDA O SEU CARRO!”);
+SENAO SE (con >= 8.0 E con <= 14.0)
+  ESCREVA(“O SEU CARRO É ECONÔMICO!”);
+SENAO 
+  ESCREVA(“O SEU CARRO É SUPER ECONÔMICO”);
+FIMSE
+FIMALGORITMO
