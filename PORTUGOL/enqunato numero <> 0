@@ -1,0 +1,23 @@
+ALGORITMO soma_equanto
+VAR
+ INTEIRO: num, soma
+INICIO
+ soma ← 0
+ 
+   ESCREVA("Informe o numero a ser somado:");
+   LEIA(num);
+   ESCREVA ("Quando digitar zero vai encerrar o programa");
+   
+ ENQUANTO (nun <> 0)FACA
+ 
+   soma ← soma + num;
+   ESCREVA("O subtotal da soma é : ", soma);
+   ESCREVA("Informe o numero a ser somado:");
+   LEIA(num);
+   
+ FIM_EMQUANTO
+ 
+   ESCREVA("A soma totelizada em: ", soma);
+   ESCREVA("A foi encerrada.");
+   
+FIMALGORITMO 
