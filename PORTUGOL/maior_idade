@@ -1,0 +1,24 @@
+
+
+ ALGORITNO maior_de_idade 
+ VAR 
+  REAL: idade, contador, soma, media; 
+ INICIO 
+  Contador <- 0; 
+  
+   ESCREVA( “Digite cada idade do grupo, quando terminar digite 0. “); 
+ REPITA 
+ 
+   ESCREVA( “Digite a idade: “); 
+   LEIA(idade); 
+   
+ SE (idade >= 18) ENTAO 
+   Contador 4- contador + 1; 
+   Soma <- soma + idade; 
+   Media <- soma / contadors 
+ FIM_SE 
+ ENQUANTO (idade > 0); 
+ 
+   ESCREVA(“A média das idades é: “, media); 
+   ESCREVA(“A guantidade de pessoas maiores de 18 anos é: “, contador); 
+ FIM_ALGORITMO 
