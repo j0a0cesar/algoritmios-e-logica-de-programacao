@@ -1,0 +1,15 @@
+
+
+ALGORITMO par_e_impar
+VAR
+ INTEIRO: num1, par, impar, r
+INICIO
+ ESCREVA(“ Digite um numero: ”);
+ LEIA(num1);
+ 
+ SE MOD(num1,2) = 0 ENTAO
+   ESCREVA(“O número é par”);
+ SE NÃO 
+   ESCREVA(“Escreva o número é ímpar”);
+ FIM SE
+ FIMALGORITMO
