@@ -20,3 +20,4 @@ if(l1 == l2 && l2 == l3){
   printf(“O triângulo é escaleno. “);
 }
  return 0;
+}
