@@ -38,5 +38,6 @@ do {
  
 printf("\n Numeros pares %d.", par);
 printf("\n Numero ipar %d.", impar); 
+
 return 0;
 }
