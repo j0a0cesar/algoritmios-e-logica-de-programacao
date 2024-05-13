@@ -1,0 +1,30 @@
+
+ALGORITMO menu
+VAR
+ INTEIRO: opcao
+INICIO
+REPITA ENQUANTO
+ ESCREVA("Digite um número de 1 a 5, para escolher uma opção no menu: [1]INSERIR\n [2]EXCLUIR [3]CONSULTAR [4]LISTAR\n [5]SAIR")
+ LEIA(opcao);
+ ESCOLHA(opcao)
+ 
+ CASO 1:
+ ESCREVA("INSERIR");
+ 
+ CASO 2:
+ ESCREVA("EXCLUIR");
+ 
+ CASO 3:
+ ESCREVA("CONSULTAR");
+ 
+ CASO 4:
+ ESCREVA("LISTAR");
+ 
+ CASO 5:
+ ESCREVA("SAIR");
+ CASO CONTRARIO:
+ ESCREVA("OPÇÃO INVÁLIDA");
+ 
+ ENQUANTO(opcao != 5);
+ 
+ FIM_ALGORITMO
