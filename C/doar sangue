@@ -3,8 +3,8 @@
 
 int main()
 {
-char nome[20];
-int doente, alimentado,idade;
+char doente, alimentado, nome[20];
+int idade;
 float kg;
   
   printf("Informe seu primeiro nome: ");
@@ -16,13 +16,13 @@ float kg;
   printf("Digite o seu peso: ");
   scanf(" %f", &kg);
 
-  printf("Você está doente? '1' para sim e '2' para não: ");
-  scanf(" %d", &doente);
+  printf("Você está doente? 'S' para sim e 'N' para não: ");
+  scanf(" %c", &doente);
 
-  printf("Você está alimentado? '1' para sim e '2' para não: ");
-  scanf(" %d", &alimentado);
+  printf("Você está alimentado? 'S' para sim e 'N' para não: ");
+  scanf(" %c", &alimentado);
 
- if(idade > 15 && idade < 70 && kg >= 50 && doente == 2 && alimentado == 1){
+ if(idade > 15 && idade < 70 && kg >= 50 && (doente == 'N'|| 'n') && (alimentado == 'S'||'s')){
    printf("Você pode doar sangue %s;\nOs bancos de sangue agradecem pela sua atitude.", nome);
    
  } else {
