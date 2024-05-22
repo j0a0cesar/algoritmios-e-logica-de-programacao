@@ -1,0 +1,61 @@
+
+/* 
+Autor: João César de Pádua Timóteo
+data: 22/05/2024
+O código serve para analisar as compras de determinas cientes(que se encontram na matriz clientes[10][37], da linha 22 até a linha 27),também 
+tem como base a idade dos clientes, calcula as medias das compras e classifica os clientes em OURO, PRATA ou BRONZE, conforme a sua idade e 
+sua media de compra.
+*/
+#include<stdio.h>
+int main()
+{// declação de variaveis
+int comp [10][3] = {{1000,2000,3000},
+                   {2000,4000,6000},
+                   {30,60,90},
+                   {40,80,120},
+                   {50,100,150},
+                   {60,120,180},
+                   {70,140,210}, 
+                   {80,160,240}, 
+                   {90,180,270},
+                   {100,200,300}
+ }; 
+ int idade[10] = {0,0,0,0,0,0,0,0,0,0},cod[10] = {1,2,3,4,5,6,7,8,9,10}, i, j, indice = 0;
+ float maior, medias, soma [10] = {0,0,0,0,0,0,0,0,0,0};
+ char clientes[10][37] = { "Luiz",
+                         {"Gabi"},
+                         {"Maria"},
+                         {"João"},
+                         {"Pedro"}, 
+                         {"José"},
+                         {"Ana"},
+                         {"Carla"}, 
+                         {"Júlia"},
+                         {"Marcos"} 
+ };
+ printf("Os nomes dos clientes:\n");
+ for (i=0; i< 10; i++){ //inicio da array
+ printf("\n%d Cliente %s \n", cod[i], clientes[i]);
+ for ( j = 0; j < 3 ; j++) {
+ printf("Valor das compras do cliente %d é igual: %d \n", cod[i], comp[i][j]);
+ soma[i] = soma[i] + comp[i][j];
+ medias = soma[i]/3;//calculos
+ 
+ } printf("Qual a sua idade:");//entrada de dados
+ scanf(" %d", &idade[i]);
+ indice = i;
+ printf("A soma das compras %.0f\n", soma[i]);//saida de dados
+ printf("A media das compras %.0f", medias);
+ if(medias>599 && idade[i]>45){//classificação dos clientes
+ printf("\n%s idade:%d é um CLIENTE OURO\n", clientes[i], idade[i]);
+ }else if(medias>299 && medias < 600 || idade[i]>30){
+ printf("\n%s idade:%d é um CLIENTE PRATA\n", clientes[i], idade[i]);
+ } else{
+ printf("\n%s idade:%d é um CLIENTE BRONZE\n", clientes[i], idade[i]);
+ }
+ 
+ }
+ 
+ 
+return(0);
+}
