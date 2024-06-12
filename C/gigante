@@ -1,0 +1,72 @@
+#include <stdio.h>
+ typedef struct{
+ 	char nome [31];
+ 	int dia, mes, ano;
+ }Pessoas;
+ typedef struct{
+ 	int dia;
+ 	int mes;
+ 	int ano;
+ }Data;
+ 
+ Data datahoje();
+ 
+ Data datahoje(){
+ 	Data d;
+ 	
+ 	printf("\nInforme o dia:");
+ 	scanf(" %d",&d.dia);
+ 	printf("\nInforme o mes:");
+ 	scanf(" %d",&d.mes); 
+	printf("\nInforme o ano:") ;
+	scanf(" %d",&d.ano);
+	return d;
+	 }
+	 
+ /*int diadhoje(int dia){
+ 	
+ 	printf("\nInforme o dia: ");
+ 	scanf(" %d",&dia);
+ 	
+ 	return dia;
+	}
+    int mesdhoje(int mes){	 
+ 	printf("Digite o mes de hoje: ");
+ 	scanf(" %d",&mes);
+ 	
+ 	return mes;
+	}
+ 	int anodhoje(int ano){
+ 	printf("digite o dia de hoje");
+ 	scanf(" %d",&ano);
+ 	
+	return ano;
+	}*/
+ 
+
+ void mesbday(Pessoas n[], Data h){
+ 		printf("\nNome: %s\nDia: %d/ Mes: %d/ Ano: %d", n[9].nome,n[9].dia,n[9].mes, n[9].ano);
+}
+int main(){
+
+	Pessoas bday[10] = { "Joao Gabriel",  18,12,2006,
+	                    "Bruna Chapelin",28,10,2005,
+	                    "Joao Cesar",      9,3,2006,
+	                    "Lucas Guimares", 10,7,1998,
+	                    "Matheus Silva",  1,12,2005,
+	                    "Rebecca Beccari",13,4,2006,
+	                    "Luiz Cesar",     29,6,1977,
+	                    "Rafaela Maria",  30,5,1987,
+	                    "Giovana Timoteo",14,4,2019,
+	                    "Iracema Pinto",  31,3,1954 };
+	                    
+ Data hoje;
+ //pedir ao usuario a data de hoje.
+hoje = datahoje();
+  printf("\nDia: %d/ Mes: %d/ Ano: %d", hoje.dia,hoje.mes, hoje.ano);
+  
+  mesbday(bday,hoje);
+	
+	return 0;
+	
+}
