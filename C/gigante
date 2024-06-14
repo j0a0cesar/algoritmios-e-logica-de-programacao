@@ -1,5 +1,5 @@
 #include <stdio.h>
- typedef struct{
+	 typedef struct{
  	char nome [31];
  	int dia, mes, ano;
  }Pessoas;
@@ -43,18 +43,68 @@
 	return ano;
 	}*/
  
+void imprimeMes(int i){
+	switch(i){
+ 	  	case 1:
+ 	  		printf("\n\nJANEIRO:");
+ 	  	break;
+ 	  	case 2:
+ 	  		printf("\n\nFEVEREIRO:");
+ 	  	break;
+ 	  	case 3:
+ 	  		printf("\n\nMARCO:");
+ 	  	break;
+ 	  	case 4:
+ 	  		printf("\n\nABRIL:");
+ 	  	break;
+ 	  	case 5:
+ 	  		printf("\n\nMAIO:");
+ 	  	break;
+ 	  	case 6:
+ 	  		printf("\n\nJUNHO:");
+ 	  	break;
+ 	  	case 7:
+ 	  		printf("\n\nJULHO:");
+ 	  	break;
+ 	  	case 8:
+ 	  		printf("\n\nAGOSTO:");
+ 	  	break;
+ 	  	case 9:
+ 	  		printf("\n\nSETEMBRO:");
+ 	  	break;
+ 	  	case 10:
+ 	  		printf("\n\nOUTUBRO:");
+ 	  	break;
+ 	  	case 11:
+ 	  		printf("\n\nNOVEMBRO:");
+ 	  	break;
+ 	  	case 12:
+ 	  		printf("\n\nDEZEMBRO:");
+ 	  	break;
+	   }
+}
 
  void mesbday(Pessoas n[], Data h){
- 		printf("\nNome: %s\nDia: %d/ Mes: %d/ Ano: %d", n[9].nome,n[9].dia,n[9].mes, n[9].ano);
+ 	int i,pMes;
+ 	  for(i = 0;i<=12;i++){
+	   imprimeMes(i);
+	    for(pMes =0;pMes<10;pMes++){
+		 if(i == n[pMes].mes){
+		 	int idade = h.ano -  n[pMes].ano;
+		 	printf("\nNOME:%s| IDADE: %d", n[pMes].nome,idade);
+		 	 printf("\n");
+}	
+}
+}
 }
 int main(){
 
 	Pessoas bday[10] = { "Joao Gabriel",  18,12,2006,
-	                    "Bruna Chapelin",28,10,2005,
-	                    "Joao Cesar",      9,3,2006,
-	                    "Lucas Guimares", 10,7,1998,
-	                    "Matheus Silva",  1,12,2005,
-	                    "Rebecca Beccari",13,4,2006,
+	                    "Bruna Chapelin",28,11,2005,
+	                    "Joao Cesar",      9,10,2006,
+	                    "Lucas Guimares", 10,9,1998,
+	                    "Matheus Silva",  1,8,2005,
+	                    "Rebecca Beccari",13,7,2006,
 	                    "Luiz Cesar",     29,6,1977,
 	                    "Rafaela Maria",  30,5,1987,
 	                    "Giovana Timoteo",14,4,2019,
@@ -68,5 +118,4 @@ hoje = datahoje();
   mesbday(bday,hoje);
 	
 	return 0;
-	
 }
